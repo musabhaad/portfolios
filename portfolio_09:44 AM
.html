@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Aamesh Hassan - Portfolio</title>
+<style>@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');body { margin: 0; font-family: 'Roboto Mono', monospace; background-color: #0f0f0f; color: #00ff00; line-height: 1.6; transition: all 0.5s ease-in-out; }*, *::before, *::after { box-sizing: border-box; }h1, h2, h3 { font-family: 'Orbitron', sans-serif; color: #00ffff; text-transform: uppercase; }h1 { font-size: 3rem; margin-bottom: 0.5rem; text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; animation: flicker 2s infinite alternate; }h2 { font-size: 2rem; margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #00ffff; padding-bottom: 0.5rem; }h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }a { color: #00ffff; text-decoration: none; transition: all 0.3s ease-in-out; }a:hover { color: #ffffff; text-shadow: 0 0 8px #ffffff; }section { padding: 2rem; margin: 1rem auto; background-color: #1a1a1a; border-radius: 8px; box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); opacity: 0; transform: translateY(20px); animation: fadeInSlideUp 1s forwards; animation-delay: calc(var(--index) * 0.2s); }header { text-align: center; padding: 2rem 0; background-color: #000000; box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4); }.contact-info p, .contact-info a { font-size: 1.1rem; margin: 0.5rem 0; }.contact-info a { font-weight: bold; }.skills-list, .experience-list, .education-list { list-style: none; padding: 0; }.skills-list li, .experience-item, .education-item { margin-bottom: 1rem; padding: 0.8rem; background-color: #0f0f0f; border-radius: 5px; border-left: 4px solid #00ffff; transition: all 0.3s ease-in-out; }.skills-list li:hover, .experience-item:hover, .education-item:hover { background-color: #1f1f1f; transform: translateX(5px); box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2); }.experience-item h3, .education-item h3 { margin-bottom: 0.3rem; }.experience-item p, .education-item p { margin: 0.3rem 0; font-size: 0.95rem; }.experience-item .dates, .education-item .dates { font-style: italic; color: #cccccc; font-size: 0.9rem; }#about, #languages { background-color: #0f0f0f; border-left: 4px solid #ff00ff; }#languages ul { display: flex; flex-wrap: wrap; gap: 1rem; list-style: none; padding: 0; }#languages li { background-color: #1a1a1a; padding: 0.5rem 1rem; border-radius: 5px; border: 1px solid #ff00ff; }/* Animations */@keyframes flicker { 0%, 18%, 22%, 25%, 53%, 57%, 100% { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; opacity: 1; } 20%, 24%, 55% { text-shadow: none; opacity: 0.8; }}@keyframes fadeInSlideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); }}/* Responsive */@media (max-width: 768px) { h1 { font-size: 2.5rem; } h2 { font-size: 1.8rem; } section { padding: 1.5rem; } .skills-list { padding: 0; } .skills-list li { padding: 0.6rem; }}@media (max-width: 480px) { h1 { font-size: 2rem; } h2 { font-size: 1.6rem; } .contact-info p, .contact-info a { font-size: 1rem; }}</style>
+</head>
+<body>
+<header>
+<h1 style="animation-delay: 0s;">Muhammad Aamesh Hassan</h1>
+<p class="subtitle" style="animation-delay: 0.2s; color: #00ffcc;">Supervisor | Operations Management</p>
+</header>
+<main>
+<section id="contact" style="--index: 1;">
+<h2>Contact Information</h2>
+<div class="contact-info">
+<p>Email: <a href="mailto:aameshhassan6@gmail.com" style="color: #00ffff;">aameshhassan6@gmail.com</a>
+</p>
+<p>Phone: <a href="tel:+923053314663" style="color: #00ffff;">+92 3053314663</a>
+</p>
+</div>
+</section>
+<section id="skills" style="--index: 2;">
+<h2>Skills</h2>
+<ul class="skills-list">
+<li>NEBOSH IGC</li>
+<li>IOSH</li>
+<li>OSHA</li>
+<li>Fire Safety</li>
+<li>First Aid</li>
+<li>Operations Management</li>
+<li>Staff Management & Discipline</li>
+<li>Process Improvement</li>
+<li>Strategic & Project Planning</li>
+<li>Safety Protocols & Risk Management</li>
+<li>Employee Motivation</li>
+<li>Industrial Hygiene</li>
+<li>Inventory Oversight</li>
+<li>Workflow & Quality Control</li>
+<li>Attention to Detail</li>
+<li>Team Leadership</li>
+<li>Conflict Resolution</ul>
+</section>
+<section id="experience" style="--index: 3;">
+<h2>Experience</h2>
+<div class="experience-list">
+<div class="experience-item">
+<h3>Supervisor</h3>
+<p>Mgs Enterprises</p>
+<p class="dates">June 2021 – July 2024</p>
+<p>Oversaw daily operations to ensure smooth workflow and timely task completion. Applied leadership and problem-solving to improve team performance and workflow organization. Enhanced customer satisfaction by resolving inquiries and concerns promptly. Maintained a productive environment by resolving internal conflicts efficiently. Mentored junior staff, supporting their professional development. Collaborated with departments to align goals and promote cross-functional teamwork. Identified and addressed operational inefficiencies to increase effectiveness. Implemented safety protocols to reduce workplace incidents and ensure compliance.</p>
+</div>
+</div>
+</section>
+<section id="education" style="--index: 4;">
+<h2>Education</h2>
+<div class="education-list">
+<div class="education-item">
+<h3>DAE Civil Engineering</h3>
+<p>Government College of Technology, Dera Ismail Khan</p>
+<p class="dates">3 Year</p>
+</div>
+</div>
+</section>
+<section id="about" style="--index: 5;">
+<h2>About Me</h2>
+<p>Dynamic and results-driven Supervisor with a proven record in operations management, team leadership, and staff motivation. Skilled in enhancing customer satisfaction through conflict resolution, process improvements, and safety compliance. Demonstrated ability to streamline workflows, boost productivity, and mentor junior staff for growth. Committed to fostering a collaborative team environment and achieving operational excellence.</p>
+</section>
+<section id="languages" style="--index: 6;">
+<h2>Languages</h2>
+<ul>
+<li>English (Fluent)</li>
+<li>Urdu</li>
+<li>Pashto</li>
+<li>Saraiki</li>
+</ul>
+</section>
+</main>
+</body>
+</html>
