@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Aamesh Hassan - Portfolio</title>
+<style>@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Orbitron:wght@400;500;700&display=swap');:root{--bg-color:#0A0A0F;--primary-text-color:#E0E0E0;--secondary-text-color:#A0A0A0;--accent-color:#00FFFF;--hover-color:#33FFFF;--card-bg:#1A1A22;--border-color:#2F2F3B;}body{margin:0;padding:20px;font-family:'Space Mono',monospace,sans-serif;background:var(--bg-color);color:var(--primary-text-color);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}@keyframes fadeInScale{from{opacity:0;transform:scale(0.98);}to{opacity:1;transform:scale(1);}}@keyframes slideInFromLeft{from{opacity:0;transform:translateX(-20px);}to{opacity:1;transform:translateX(0);}}.container{max-width:900px;margin:40px auto;padding:20px;background-color:var(--card-bg);border-radius:12px;box-shadow:0 0 30px rgba(0,255,255,0.15);border:1px solid var(--border-color);animation:fadeInScale 0.8s ease-out forwards;opacity:0;}.header-section{text-align:center;padding-bottom:20px;border-bottom:1px dashed var(--border-color);margin-bottom:30px;animation:slideInFromLeft 0.6s ease-out forwards;animation-delay:0.2s;opacity:0;}h1,h2,h3{font-family:'Orbitron',sans-serif;color:var(--accent-color);text-shadow:0 0 8px rgba(0,255,255,0.5);margin-bottom:15px;letter-spacing:1px;}h1{font-size:2.8em;margin-bottom:10px;text-align:center;}h2{font-size:2em;border-bottom:2px solid var(--accent-color);padding-bottom:5px;margin-top:30px;animation:slideInFromLeft 0.6s ease-out forwards;opacity:0;}h3{font-size:1.4em;color:var(--primary-text-color);margin-top:20px;}p{margin-bottom:10px;}a{color:var(--accent-color);text-decoration:none;border-bottom:1px dashed var(--accent-color);transition:color 0.3s ease,border-bottom 0.3s ease,text-shadow 0.3s ease;}a:hover{color:var(--hover-color);border-bottom:1px solid var(--hover-color);text-shadow:0 0 5px rgba(0,255,255,0.7);}.header-section h1{font-size:3.5em;margin-bottom:5px;}.header-section p{font-size:1.2em;color:var(--secondary-text-color);margin-top:0;}.contact-info{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:20px;font-size:0.95em;}.contact-info div{display:flex;align-items:center;gap:8px;}.contact-info div span{color:var(--accent-color);font-weight:bold;}.section-card,.about-me-text{background-color:var(--bg-color);border-radius:8px;padding:20px;margin-bottom:25px;border:1px solid var(--border-color);box-shadow:0 4px 15px rgba(0,0,0,0.3);transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s ease;animation:slideInFromLeft 0.6s ease-out forwards;opacity:0;}.section-card:hover,.about-me-text:hover{transform:translateY(-5px);box-shadow:0 8px 25px rgba(0,255,255,0.4);border-color:var(--accent-color);}.section-card h3{margin-top:0;margin-bottom:10px;color:var(--accent-color);}.section-card p{margin-bottom:5px;color:var(--secondary-text-color);}.section-card ul{list-style:none;padding:0;margin:0;}.section-card li{margin-bottom:5px;}.skills-grid,.languages-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px;}.skill-item,.language-item{background-color:var(--border-color);color:var(--primary-text-color);padding:8px 15px;border-radius:5px;font-size:0.9em;border:1px solid transparent;transition:background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease,box-shadow 0.3s ease;animation:fadeInScale 0.5s ease-out forwards;opacity:0;animation-delay:var(--delay);}.skill-item:hover,.language-item:hover{background-color:var(--accent-color);color:var(--bg-color);border-color:var(--hover-color);box-shadow:0 0 10px rgba(0,255,255,0.6);}.experience-item,.education-item{margin-bottom:20px;padding-left:20px;position:relative;animation:slideInFromLeft 0.6s ease-out forwards;opacity:0;animation-delay:var(--delay);}.experience-item:not(:last-child)::after,.education-item:not(:last-child)::after{content:'';position:absolute;left:0;top:5px;bottom:-15px;width:2px;background-color:var(--border-color);}.experience-item::before,.education-item::before{content:'';position:absolute;left:-5px;top:8px;width:12px;height:12px;background-color:var(--accent-color);border-radius:50%;border:2px solid var(--card-bg);box-shadow:0 0 8px var(--accent-color);}.experience-item h4,.education-item h4{margin:0 0 5px 0;color:var(--primary-text-color);font-size:1.1em;}.experience-item p,.education-item p{margin:0 0 5px 0;font-size:0.9em;color:var(--secondary-text-color);}.experience-item .description{font-size:0.95em;margin-top:10px;color:var(--primary-text-color);white-space:pre-wrap;}@media (max-width:768px){.container{margin:20px auto;padding:15px;}h1{font-size:2.5em;}h2{font-size:1.8em;}.header-section h1{font-size:2.8em;}.header-section p{font-size:1em;}.contact-info{flex-direction:column;align-items:flex-start;}.experience-item,.education-item{padding-left:15px;}.experience-item:not(:last-child)::after,.education-item:not(:last-child)::after{left:-2px;}.experience-item::before,.education-item::before{left:-8px;}}@media (max-width:480px){body{padding:10px;}h1{font-size:2em;}h2{font-size:1.5em;}.header-section h1{font-size:2.2em;}.contact-info div{font-size:0.85em;}}</style>
+</head>
+<body>
+<div class="container">
+<div class="header-section">
+<h1>Muhammad Aamesh Hassan</h1>
+<p>Supervisor</p>
+<div class="contact-info">
+<div>
+<span>Email:</span>
+<a href="mailto:aameshhassan6@gmail.com">aameshhassan6@gmail.com</a>
+</div>
+<div>
+<span>Phone:</span>
+<a href="tel:+923053314663">+92 3053314663</a>
+</div>
+</div>
+</div>
+<div class="about-me-text" style="animation-delay:0.4s;">
+<h2 style="animation-delay:0.4s;">About Me</h2>
+<p>Dynamic and results-driven Supervisor with a proven record in operations management, team leadership, and staff motivation. Skilled in enhancing customer satisfaction through conflict resolution, process improvements, and safety compliance. Demonstrated ability to streamline workflows, boost productivity, and mentor junior staff for growth. Committed to fostering a collaborative team environment and achieving operational excellence.</p>
+</div>
+<div class="skills-section">
+<h2 style="animation-delay:0.6s;">Skills</h2>
+<div class="skills-grid">
+<div class="skill-item" style="--delay:0.7s;">NEBOSH IGC</div>
+<div class="skill-item" style="--delay:0.75s;">IOSH</div>
+<div class="skill-item" style="--delay:0.8s;">OSHA</div>
+<div class="skill-item" style="--delay:0.85s;">Fire Safety</div>
+<div class="skill-item" style="--delay:0.9s;">First Aid</div>
+<div class="skill-item" style="--delay:0.95s;">Operations Management</div>
+<div class="skill-item" style="--delay:1.0s;">Staff Management & Discipline</div>
+<div class="skill-item" style="--delay:1.05s;">Process Improvement</div>
+<div class="skill-item" style="--delay:1.1s;">Strategic & Project Planning</div>
+<div class="skill-item" style="--delay:1.15s;">Safety Protocols & Risk Management</div>
+<div class="skill-item" style="--delay:1.2s;">Employee Motivation</div>
+<div class="skill-item" style="--delay:1.25s;">Industrial Hygiene</div>
+<div class="skill-item" style="--delay:1.3s;">Inventory Oversight</div>
+<div class="skill-item" style="--delay:1.35s;">Workflow & Quality Control</div>
+<div class="skill-item" style="--delay:1.4s;">Attention to Detail</div>
+<div class="skill-item" style="--delay:1.45s;">Team Leadership</div>
+<div class="skill-item" style="--delay:1.5s;">Conflict Resolution</div>
+</div>
+</div>
+<div class="experience-section">
+<h2 style="animation-delay:1.0s;">Experience</h2>
+<div class="section-card" style="animation-delay:1.1s;">
+<div class="experience-item" style="--delay:1.1s;">
+<h4>Supervisor at Mgs Enterprises</h4>
+<p>June 2021 – July 2024</p>
+<p class="description">Oversaw daily operations to ensure smooth workflow and timely task completion. Applied leadership and problem-solving to improve team performance and workflow organization. Enhanced customer satisfaction by resolving inquiries and concerns promptly. Maintained a productive environment by resolving internal conflicts efficiently. Mentored junior staff, supporting their professional development. Collaborated with departments to align goals and promote cross-functional teamwork. Identified and addressed operational inefficiencies to increase effectiveness. Implemented safety protocols to reduce workplace incidents and ensure compliance.</p>
+</div>
+</div>
+</div>
+<div class="education-section">
+<h2 style="animation-delay:1.4s;">Education</h2>
+<div class="section-card" style="animation-delay:1.5s;">
+<div class="education-item" style="--delay:1.5s;">
+<h4>DAE Civil Engineering at Government College of Technology, Dera Ismail Khan</h4>
+<p>3 Year</p>
+</div>
+</div>
+</div>
+<div class="languages-section">
+<h2 style="animation-delay:1.8s;">Languages</h2>
+<div class="languages-list">
+<div class="language-item" style="--delay:1.9s;">English (Fluent)</div>
+<div class="language-item" style="--delay:1.95s;">Urdu</div>
+<div class="language-item" style="--delay:2.0s;">Pashto</div>
+<div class="language-item" style="--delay:2.05s;">Saraiki</div>
+</div>
+</div>
+</div>
+</body>
+</html>
