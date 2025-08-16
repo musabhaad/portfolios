@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Aamesh Hassan's Portfolio</title>
+<style>*, *::before, *::after { box-sizing: border-box; } :root { --bg-dark: #0a0815; --bg-medium: #100c20; --bg-light: #1a152e; --accent-blue: #00e6e6; --accent-purple: #9060ff; --text-light: #e0e0e0; --text-medium: #b0b0b0; --text-dark: #808080; --border-glow: #00e6e650; } body { font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background-color: var(--bg-dark); color: var(--text-light); line-height: 1.6; overflow-x: hidden; } @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } } @keyframes slideInLeft { from { opacity: 0; transform: translateX(-50px); } to { opacity: 1; transform: translateX(0); } } @keyframes slideInRight { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: translateX(0); } } .section { padding: 60px 20px; max-width: 900px; margin: 0 auto; opacity: 0; animation: fadeIn 1s forwards; } .section:nth-of-type(odd) { animation-delay: 0.1s; } .section:nth-of-type(even) { animation-delay: 0.2s; } h1, h2, h3 { color: var(--accent-blue); text-align: center; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px; position: relative; animation: slideInLeft 1s forwards; animation-delay: 0.3s; } h2::after { content: ''; display: block; width: 60px; height: 3px; background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple)); margin: 10px auto 0; box-shadow: 0 0 10px var(--accent-blue); } .hero { text-align: center; padding: 100px 20px; background: linear-gradient(135deg, var(--bg-dark) 0%, #0a0815 100%); border-bottom: 2px solid var(--accent-blue); box-shadow: 0 5px 20px rgba(0, 246, 246, 0.2); position: relative; overflow: hidden; opacity: 0; animation: fadeIn 1s forwards; } .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: linear-gradient(to right, rgba(0,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,255,255,0.05) 1px, transparent 1px); background-size: 30px 30px; opacity: 0.2; z-index: 0; } .hero-content { position: relative; z-index: 1; } .hero h1 { font-size: 3.5em; margin-bottom: 10px; color: var(--accent-blue); text-shadow: 0 0 15px var(--accent-blue); animation: slideInLeft 1s forwards; animation-delay: 0.5s; } .hero p { font-size: 1.5em; color: var(--text-medium); margin-top: 0; animation: slideInRight 1s forwards; animation-delay: 0.6s; } .contact-info, .about-me, .languages-wrapper { background-color: var(--bg-medium); padding: 40px; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 246, 246, 0.1); margin-bottom: 40px; position: relative; animation: fadeIn 1s forwards; animation-delay: 0.4s; } .contact-info p, .about-me p { margin-bottom: 10px; font-size: 1.1em; line-height: 1.8; color: var(--text-medium); } .contact-info a { color: var(--accent-blue); text-decoration: none; transition: color 0.3s ease, text-shadow 0.3s ease; } .contact-info a:hover { color: var(--accent-purple); text-shadow: 0 0 8px var(--accent-blue); } .contact-item { display: flex; align-items: center; margin-bottom: 10px; } .contact-item span { margin-right: 10px; color: var(--accent-blue); font-size: 1.2em; } .languages-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; } .languages-list li { background-color: var(--bg-light); color: var(--accent-blue); padding: 8px 15px; margin: 5px; border-radius: 5px; border: 1px solid var(--accent-blue); transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; font-size: 0.9em; } .languages-list li:hover { transform: translateY(-3px) scale(1.02); background-color: var(--accent-blue); color: var(--bg-dark); box-shadow: 0 5px 15px rgba(0, 246, 246, 0.3); } .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; padding: 20px 0; } .skill-item { background-color: var(--bg-medium); padding: 15px 20px; border-left: 3px solid var(--accent-blue); border-radius: 8px; box-shadow: 0 0 10px rgba(0, 246, 246, 0.1); color: var(--text-light); font-size: 1em; text-align: center; transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; position: relative; overflow: hidden; } .skill-item::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px; border: 1px solid transparent; box-sizing: border-box; pointer-events: none; z-index: 0; transition: border-color 0.3s ease, box-shadow 0.3s ease; } .skill-item:hover { transform: translateY(-5px) scale(1.02); background-color: var(--bg-light); border-color: var(--accent-purple); box-shadow: 0 8px 25px rgba(0, 246, 246, 0.2), 0 0 30px rgba(144, 96, 255, 0.15); } .skill-item:hover::before { border-color: var(--accent-blue); box-shadow: 0 0 20px var(--accent-blue); } .card-container { display: flex; flex-direction: column; gap: 30px; } .card { background-color: var(--bg-medium); padding: 30px; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 246, 246, 0.1); position: relative; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid transparent; } .card:hover { transform: translateY(-8px) scale(1.01); box-shadow: 0 15px 30px rgba(0, 246, 246, 0.2), 0 0 40px rgba(144, 96, 255, 0.15); border-color: var(--accent-blue); } .card h3 { color: var(--accent-blue); margin-top: 0; margin-bottom: 10px; font-size: 1.5em; text-align: left; } .card .company, .card .institution { color: var(--accent-purple); font-size: 1.1em; margin-bottom: 5px; font-weight: bold; } .card .dates, .card .year { color: var(--text-medium); font-size: 0.95em; margin-bottom: 15px; display: block; } .card p { color: var(--text-light); font-size: 1em; margin-bottom: 0; } .card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: linear-gradient(to bottom, var(--accent-blue), var(--accent-purple)); box-shadow: 0 0 15px var(--accent-blue); transition: width 0.3s ease; } .card:hover::before { width: 8px; } @media (max-width: 768px) { .hero h1 { font-size: 2.5em; } .hero p { font-size: 1.2em; } .section { padding: 40px 15px; } h2 { font-size: 1.8em; } .skills-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); } .card { padding: 25px; } .contact-info, .about-me, .languages-wrapper { padding: 30px; } } @media (max-width: 480px) { .hero h1 { font-size: 2em; } .hero p { font-size: 1em; } .section { padding: 30px 10px; } h2 { font-size: 1.5em; } .skills-grid { grid-template-columns: 1fr; } .skill-item { text-align: left; } .languages-list { justify-content: flex-start; } }</style>
+</head>
+<body>
+<div class="hero">
+<div class="hero-content">
+<h1>Muhammad Aamesh Hassan</h1>
+<p>Supervisor | Operations & Safety Professional</p>
+</div>
+</div>
+<div class="section contact-section">
+<h2>Contact Information</h2>
+<div class="contact-info">
+<p class="contact-item">
+<span>&#9993;</span> Email: <a href="mailto:aameshhassan6@gmail.com">aameshhassan6@gmail.com</a>
+</p>
+<p class="contact-item">
+<span>&#9742;</span> Phone: <a href="tel:+923053314663">+92 3053314663</a>
+</p>
+</div>
+</div>
+<div class="section skills-section">
+<h2>Skills</h2>
+<div class="skills-grid">
+<div class="skill-item">NEBOSH IGC</div>
+<div class="skill-item">IOSH</div>
+<div class="skill-item">OSHA</div>
+<div class="skill-item">Fire Safety</div>
+<div class="skill-item">First Aid</div>
+<div class="skill-item">Operations Management</div>
+<div class="skill-item">Staff Management & Discipline</div>
+<div class="skill-item">Process Improvement</div>
+<div class="skill-item">Strategic & Project Planning</div>
+<div class="skill-item">Safety Protocols & Risk Management</div>
+<div class="skill-item">Employee Motivation</div>
+<div class="skill-item">Industrial Hygiene</div>
+<div class="skill-item">Inventory Oversight</div>
+<div class="skill-item">Workflow & Quality Control</div>
+<div class="skill-item">Attention to Detail</div>
+<div class="skill-item">Team Leadership</div>
+<div class="skill-item">Conflict Resolution</div>
+</div>
+</div>
+<div class="section experience-section">
+<h2>Experience</h2>
+<div class="card-container">
+<div class="card">
+<h3>Supervisor</h3>
+<span class="company">Mgs Enterprises</span>
+<span class="dates">June 2021 – July 2024</span>
+<p>Oversaw daily operations to ensure smooth workflow and timely task completion. Applied leadership and problem-solving to improve team performance and workflow organization. Enhanced customer satisfaction by resolving inquiries and concerns promptly. Maintained a productive environment by resolving internal conflicts efficiently. Mentored junior staff, supporting their professional development. Collaborated with departments to align goals and promote cross-functional teamwork. Identified and addressed operational inefficiencies to increase effectiveness. Implemented safety protocols to reduce workplace incidents and ensure compliance.</p>
+</div>
+</div>
+</div>
+<div class="section education-section">
+<h2>Education</h2>
+<div class="card-container">
+<div class="card">
+<h3>DAE Civil Engineering</h3>
+<span class="institution">Government College of Technology, Dera Ismail Khan</span>
+<span class="year">3 Year</span>
+</div>
+</div>
+</div>
+<div class="section about-section">
+<h2>About Me</h2>
+<div class="about-me">
+<p>Dynamic and results-driven Supervisor with a proven record in operations management, team leadership, and staff motivation. Skilled in enhancing customer satisfaction through conflict resolution, process improvements, and safety compliance. Demonstrated ability to streamline workflows, boost productivity, and mentor junior staff for growth. Committed to fostering a collaborative team environment and achieving operational excellence.</p>
+</div>
+</div>
+<div class="section languages-section">
+<h2>Languages</h2>
+<div class="languages-wrapper">
+<ul class="languages-list">
+<li>English (Fluent)</li>
+<li>Urdu</li>
+<li>Pashto</li>
+<li>Saraiki</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
