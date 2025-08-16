@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saif Ullah Awan - Creative Portfolio</title>
+<style>body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;background-color:#F0F2F5;color:#333;line-height:1.6;overflow-x:hidden;}
+.container{max-width:960px;margin:0 auto;padding:20px;box-sizing:border-box;}
+header{background-color:#2C73D2;color:#FFF;padding:60px 0;text-align:center;position:relative;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+.hero-section h1{margin:0;font-size:3.5em;font-weight:700;letter-spacing:-1px;animation:slideInFromLeft 1s ease-out forwards;}
+.hero-section p{margin:10px 0 0;font-size:1.5em;opacity:0;animation:fadeInUp 1s ease-out 0.5s forwards;}
+section{background-color:#FFF;padding:40px;margin-bottom:25px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.08);opacity:0;transform:translateY(20px);animation:fadeInSection 0.8s ease-out forwards;animation-fill-mode:forwards;}
+section:nth-of-type(odd){animation-delay:0.2s;}
+section:nth-of-type(even){animation-delay:0.4s;}
+section#contact{animation-delay:0s;}
+h2{color:#2C73D2;font-size:2em;border-bottom:3px solid #E0E0E0;padding-bottom:15px;margin-bottom:30px;position:relative;}
+h2::after{content:'';display:block;width:60px;height:3px;background-color:#2C73D2;position:absolute;bottom:-3px;left:0;border-radius:2px;}
+p,ul{margin-bottom:1em;}
+ul{list-style:none;padding:0;}
+ul li{margin-bottom:8px;padding-left:25px;position:relative;}
+ul li::before{content:'';position:absolute;left:0;top:8px;width:10px;height:10px;background-color:#2C73D2;border-radius:50%;}
+a{color:#2C73D2;text-decoration:none;transition:color 0.3s ease, transform 0.3s ease;}
+a:hover{color:#1A5E9F;transform:translateY(-2px);}
+.contact-info p{display:flex;align-items:center;margin-bottom:10px;font-size:1.1em;}
+.contact-info a{margin-left:10px;}
+.skill-grid{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:20px;}
+.skill-item{background-color:#EBF5FF;color:#2C73D2;padding:10px 18px;border-radius:25px;font-weight:600;font-size:0.9em;transition:all 0.3s ease;cursor:default;}
+.skill-item:hover{background-color:#2C73D2;color:#FFF;transform:scale(1.05) translateY(-3px);box-shadow:0 4px 10px rgba(44,115,210,0.3);}
+.timeline{position:relative;padding-left:30px;}
+.timeline::before{content:'';position:absolute;left:10px;top:0;height:100%;width:2px;background-color:#E0E0E0;}
+.timeline-item{margin-bottom:30px;position:relative;background-color:#F8F8F8;padding:20px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.05);transition:all 0.3s ease;}
+.timeline-item:hover{transform:translateY(-5px) scale(1.01);box-shadow:0 6px 15px rgba(0,0,0,0.1);}
+.timeline-item::before{content:'';position:absolute;left:-25px;top:25px;width:12px;height:12px;border-radius:50%;background-color:#2C73D2;border:2px solid #FFF;box-shadow:0 0 0 3px #2C73D2;}
+.timeline-item h3{margin:0 0 5px;color:#2C73D2;font-size:1.4em;}
+.timeline-item h4{margin:0 0 5px;color:#555;font-size:1.1em;}
+.timeline-item p.dates{margin:0 0 10px;color:#888;font-size:0.9em;}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;}
+.card{background-color:#F8F8F8;padding:25px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.05);transition:all 0.3s ease;border-left:5px solid #2C73D2;}
+.card:hover{transform:translateY(-5px) scale(1.01);box-shadow:0 6px 15px rgba(0,0,0,0.1);}
+.card h3{margin:0 0 10px;color:#2C73D2;font-size:1.3em;}
+.card p{margin:0;color:#666;}
+.icon{display:inline-block;width:20px;height:20px;vertical-align:middle;margin-right:8px;background-size:contain;background-repeat:no-repeat;filter:invert(30%) sepia(90%) saturate(1500%) hue-rotate(190deg) brightness(80%) contrast(100%);}
+.icon-mail{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+</path>
+<polyline points="22,6 12,13 2,6">
+</polyline>
+</svg>');}
+.icon-phone{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+</path>
+</svg>');}
+@keyframes fadeInSection { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideInFromLeft { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@media(max-width:768px){.hero-section h1{font-size:2.5em;}.hero-section p{font-size:1.2em;}.timeline::before{left:8px;}.timeline-item::before{left:-22px;}.timeline{padding-left:25px;}section{padding:30px;}h2{font-size:1.8em;padding-bottom:10px;}.skill-item{padding:8px 15px;font-size:0.85em;}}
+@media(max-width:480px){.hero-section h1{font-size:2em;}.hero-section p{font-size:1em;}section{padding:20px;}h2{font-size:1.5em;margin-bottom:20px;}
+.skill-grid{gap:8px;}.skill-item{font-size:0.8em;padding:6px 12px;}.timeline-item{padding:15px;}.timeline-item h3{font-size:1.2em;}.timeline-item h4{font-size:1em;}}</style>
+</head>
+<body>
+<header>
+<div class="container hero-section">
+<h1>Saif Ullah Awan</h1>
+<p>Software Developer</p>
+</div>
+</header>
+<main class="container">
+<section id="contact" style="animation-delay:0s;">
+<h2>Contact Information</h2>
+<div class="contact-info">
+<p>
+<span class="icon icon-mail">
+</span> Email: <a href="mailto:saifullahawan865@gmail.com">saifullahawan865@gmail.com</a>
+</p>
+<p>
+<span class="icon icon-phone">
+</span> Phone: <a href="tel:(+92) 328-7594424">(+92) 328-7594424</a>
+</p>
+</div>
+</section>
+<section id="skills">
+<h2>Skills</h2>
+<div class="skill-grid">
+<span class="skill-item">Python</span>
+<span class="skill-item">C++</span>
+<span class="skill-item">JavaScript</span>
+<span class="skill-item">HTML</span>
+<span class="skill-item">CSS</span>
+<span class="skill-item">Bash</span>
+<span class="skill-item">Node.js</span>
+<span class="skill-item">Express</span>
+<span class="skill-item">Flask</span>
+<span class="skill-item">REST APIs</span>
+<span class="skill-item">Angular</span>
+<span class="skill-item">PyQt5</span>
+<span class="skill-item">Tkinter</span>
+<span class="skill-item">Bootstrap</span>
+<span class="skill-item">MongoDB</span>
+<span class="skill-item">MySQL</span>
+<span class="skill-item">Firebase</span>
+<span class="skill-item">AWS (EC2, S3)</span>
+<span class="skill-item">Git</span>
+<span class="skill-item">Heroku</span>
+<span class="skill-item">CI/CD</span>
+<span class="skill-item">Pandas</span>
+<span class="skill-item">NumPy</span>
+<span class="skill-item">Scikit-learn</span>
+<span class="skill-item">OpenCV</span>
+<span class="skill-item">YOLO</span>
+<span class="skill-item">Scraping</span>
+<span class="skill-item">Email Bots</span>
+<span class="skill-item">OCR</span>
+<span class="skill-item">CLI Tools</span>
+<span class="skill-item">VS Code</span>
+<span class="skill-item">Jupyter</span>
+<span class="skill-item">Packet Tracer</span>
+<span class="skill-item">Postman</span>
+<span class="skill-item">Windows</span>
+<span class="skill-item">Linux (Ubuntu)</span>
+<span class="skill-item">macOS</span>
+<span class="skill-item">Agile</span>
+<span class="skill-item">Communication</span>
+<span class="skill-item">Problem-Solving</span>
+</div>
+</section>
+<section id="experience">
+<h2>Experience</h2>
+<div class="timeline">
+<div class="timeline-item">
+<h3>Backend Development Intern</h3>
+<h4>Software Productivity Strategists, Inc. (SPS) – GreenKeyper</h4>
+<p class="dates">July 2025 – Present</p>
+<p>Built backend systems, RESTful APIs using Node.js/Express.js. Integrated MongoDB, implemented auth and role-based access. Improved API speed by 30%, added tests and documentation.</p>
+</div>
+<div class="timeline-item">
+<h3>Python Developer Intern</h3>
+<h4>Technik Nest Pvt Ltd</h4>
+<p class="dates">June – July 2025</p>
+<p>Built RESTful APIs using Python. Applied ML techniques and collaborated on backend features.</p>
+</div>
+<div class="timeline-item">
+<h3>Freelancer</h3>
+<h4>Fiverr</h4>
+<p class="dates">2024 – Present</p>
+<p>Delivered projects in scraping, automation, and lead generation.</p>
+</div>
+</div>
+</section>
+<section id="education">
+<h2>Education</h2>
+<div class="timeline">
+<div class="timeline-item">
+<h3>Bachelor of Science in Information Technology</h3>
+<h4>Air University, Islamabad</h4>
+<p class="dates">2023 – 2027</p>
+</div>
+</div>
+</section>
+<section id="about">
+<h2>About Me</h2>
+<p>Not specified</p>
+</section>
+<section id="languages">
+<h2>Languages</h2>
+<ul>
+<li>English: Professional Proficiency</li>
+<li>Urdu: Native Proficiency</li>
+</ul>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<div class="card-grid">
+<div class="card">
+<h3>Milo – Real-Time Object Detection App</h3>
+<p>PyQt5 GUI, YOLOv8, real-time stats, reports – GitHub</p>
+</div>
+<div class="card">
+<h3>Milo – System Health Monitor</h3>
+<p>Tkinter/psutil desktop monitoring tool – GitHub</p>
+</div>
+<div class="card">
+<h3>Milo – Info Scanner</h3>
+<p>Cybersecurity tool using OCR, hashes – GitHub</p>
+</div>
+<div class="card">
+<h3>AI Object Scanner App</h3>
+<p>YOLOv8 image detection and PDF reports – GitHub</p>
+</div>
+<div class="card">
+<h3>Other projects</h3>
+<p>LMS Portal, E-Commerce Site, Port Scanner, Weather App, PDF Merger, YouTube Downloader</p>
+</div>
+</div>
+</section>
+<section id="certifications">
+<h2>Certifications</h2>
+<div class="card-grid">
+<div class="card">
+<h3>Diploma in Databases and T-SQL</h3>
+<p>Alison (26 July 2025)</p>
+</div>
+<div class="card">
+<h3>Data Fundamentals</h3>
+<p>IBM SkillsBuild (01 Aug 2025)</p>
+</div>
+<div class="card">
+<h3>CS402: Computer Communications & Networks</h3>
+<p>Saylor Academy (26 July 2025) – 38 hours, 84.62% (GPA 3.8)</p>
+</div>
+<div class="card">
+<h3>CS403: Introduction to Modern Database Systems</h3>
+<p>Saylor Academy (26 July 2025) – 42 hours, 86.00% (GPA 4.2)</p>
+</div>
+<div class="card">
+<h3>Basics of Data Science</h3>
+<p>UniAthena & Cambridge International Qualifications (July 2025)</p>
+</div>
+<div class="card">
+<h3>Basics of Python</h3>
+<p>UniAthena & Cambridge International Qualifications (July 2025)</p>
+</div>
+<div class="card">
+<h3>Basics of Machine Learning Algorithms</h3>
+<p>UniAthena & Cambridge International Qualifications (July 2025)</p>
+</div>
+<div class="card">
+<h3>Machine Learning with Python</h3>
+<p>freeCodeCamp (July 2025)</p>
+</div>
+<div class="card">
+<h3>Data Analysis with Python</h3>
+<p>freeCodeCamp (July 2025)</p>
+</div>
+<div class="card">
+<h3>JavaScript Algorithms and Data Structures</h3>
+<p>freeCodeCamp (20 July 2025)</p>
+</div>
+</div>
+</section>
+<section id="extracurricular">
+<h2>Extracurricular Activities</h2>
+<ul>
+<li>Participated in Air University coding contests</li>
+<li>Led group academic projects</li>
+<li>Attended workshops: Blockchain, Digital Marketing, Web Dev</li>
+</ul>
+</section>
+</main>
+</body>
+</html>
