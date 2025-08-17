@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moiz Ahmed | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } } @keyframes glow { 0%, 100% { text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color); } 50% { text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color); } } @keyframes slideIn { from { opacity: 0; transform: translateX(-50px); } to { opacity: 1; transform: translateX(0); } } @keyframes backgroundPulse { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } } :root { --bg-color: #020412; --primary-color: #00f2ff; --secondary-color: #ff00c1; --text-color: #d0d8f0; --card-bg: rgba(10, 25, 47, 0.5); --border-color: rgba(0, 242, 255, 0.2); --glow-color: rgba(0, 242, 255, 0.7); } * { box-sizing: border-box; margin: 0; padding: 0; } html { scroll-behavior: smooth; } body { font-family: 'Exo 2', sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.7; background-image: linear-gradient(315deg, rgba(2,4,18,1) 0%, rgba(13,5,38,1) 34%, rgba(2,4,18,1) 68%); background-size: 400% 400%; animation: backgroundPulse 20s ease infinite; position: relative; } body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(0, 242, 255, 0.05) 2px, rgba(0, 242, 255, 0.05) 3px); pointer-events: none; z-index: -1; } .container { max-width: 1100px; margin: 0 auto; padding: 2rem; } .header { text-align: center; margin-bottom: 4rem; animation: fadeIn 1s ease-out; } .header h1 { font-family: 'Share Tech Mono', monospace; font-size: 4rem; font-weight: 700; color: #fff; text-shadow: 0 0 5px var(--glow-color), 0 0 10px var(--glow-color), 0 0 15px var(--glow-color); margin-bottom: 0.5rem; letter-spacing: 2px; } .header .title { font-size: 1.5rem; color: var(--primary-color); font-weight: 400; margin-bottom: 1.5rem; } .contact-info { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; } .contact-info a { color: var(--text-color); text-decoration: none; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem; transition: color 0.3s ease, text-shadow 0.3s ease; } .contact-info a:hover { color: var(--primary-color); text-shadow: 0 0 8px var(--glow-color); } .contact-info svg { width: 20px; height: 20px; fill: var(--primary-color); transition: transform 0.3s ease; } .contact-info a:hover svg { transform: scale(1.2); } .section { margin-bottom: 4rem; animation: fadeIn 1s ease-out forwards; opacity: 0; animation-delay: 0.2s; } .section h2 { font-family: 'Share Tech Mono', monospace; font-size: 2.5rem; color: var(--primary-color); text-align: center; margin-bottom: 2.5rem; position: relative; padding-bottom: 0.5rem; text-shadow: 0 0 5px var(--glow-color); } .section h2::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 3px; background: linear-gradient(90deg, transparent, var(--primary-color), transparent); } .about-me p { font-size: 1.1rem; text-align: center; max-width: 800px; margin: 0 auto; background: var(--card-bg); padding: 1.5rem; border: 1px solid var(--border-color); backdrop-filter: blur(5px); clip-path: polygon(0 10px, 10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%); } .skills-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; } .skill-tag { background: var(--card-bg); color: var(--text-color); padding: 0.5rem 1.2rem; border: 1px solid var(--border-color); font-size: 0.95rem; font-family: 'Share Tech Mono', monospace; transition: all 0.3s ease; clip-path: polygon(0 5px, 5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%); } .skill-tag:hover { background: var(--primary-color); color: var(--bg-color); font-weight: bold; border-color: var(--primary-color); transform: translateY(-3px); box-shadow: 0 5px 15px var(--glow-color); } .timeline { position: relative; max-width: 800px; margin: 0 auto; } .timeline::after { content: ''; position: absolute; width: 3px; background: linear-gradient(to bottom, var(--border-color), var(--primary-color), var(--border-color)); top: 0; bottom: 0; left: 50%; margin-left: -1.5px; } .timeline-item { padding: 10px 40px; position: relative; background-color: inherit; width: 50%; animation: slideIn 1s ease-out forwards; opacity: 0; } .timeline-item:nth-child(1) { animation-delay: 0.2s; } .timeline-item:nth-child(2) { animation-delay: 0.4s; } .timeline-item:nth-child(3) { animation-delay: 0.6s; } .timeline-item:nth-child(4) { animation-delay: 0.8s; } .timeline-item.left { left: 0; } .timeline-item.right { left: 50%; } .timeline-item::after { content: ''; position: absolute; width: 20px; height: 20px; right: -11px; background-color: var(--bg-color); border: 4px solid var(--primary-color); top: 25px; border-radius: 50%; z-index: 1; box-shadow: 0 0 10px var(--glow-color); transition: transform 0.3s ease; } .timeline-item.right::after { left: -9px; } .timeline-item .content { padding: 1.5rem; background: var(--card-bg); backdrop-filter: blur(5px); position: relative; border: 1px solid var(--border-color); transition: border-color 0.3s, box-shadow 0.3s; clip-path: polygon(0 10px, 10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%); } .timeline-item:hover .content { border-color: var(--primary-color); box-shadow: 0 0 20px var(--glow-color); } .timeline-item:hover::after { transform: scale(1.3); } .timeline-item h3 { font-size: 1.3rem; color: #fff; margin-bottom: 0.2rem; } .timeline-item .company { color: var(--primary-color); font-style: italic; margin-bottom: 0.5rem; font-size: 1.1rem; } .timeline-item .dates { font-size: 0.9rem; color: var(--text-color); opacity: 0.8; margin-bottom: 1rem; } .timeline-item p, .timeline-item ul { font-size: 1rem; } .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; } .card { background: var(--card-bg); backdrop-filter: blur(5px); border: 1px solid var(--border-color); padding: 1.5rem; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; clip-path: polygon(0 8px, 8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%); } .card:hover { transform: translateY(-5px); border-color: var(--primary-color); box-shadow: 0 10px 25px var(--glow-color); } .card h3 { color: var(--primary-color); font-size: 1.2rem; margin-bottom: 0.5rem; } .card p { font-size: 1rem; } .languages-list { text-align: center; } .languages-list span { display: inline-block; margin: 0.5rem; font-family: 'Share Tech Mono', monospace; font-size: 1rem; } @media screen and (max-width: 768px) { .header h1 { font-size: 2.8rem; } .header .title { font-size: 1.2rem; } .section h2 { font-size: 2rem; } .timeline::after { left: 20px; } .timeline-item { width: 100%; padding-left: 50px; padding-right: 15px; } .timeline-item.left, .timeline-item.right { left: 0%; } .timeline-item.left::after, .timeline-item.right::after { left: 10px; } } </style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="name-container">
+<h1>Moiz Ahmed</h1>
+</div>
+<p class="title">Microsoft Power Platform Consultant</p>
+<div class="contact-info">
+<a href="mailto:moiz.ahmed@live.com">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
+</svg>moiz.ahmed@live.com</a>
+<a href="tel:+923205778630">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.02.74-.25 1.02l-2.2 2.2z"/>
+</svg>+92 320 5778630</a>
+</div>
+</header>
+<main>
+<section class="section about-me" style="animation-delay: 0.3s;">
+<h2 id="about">About Me</h2>
+<p>Microsoft Power Platform Consultant with 7+ years of experience in designing, developing, and delivering end-to-end business solutions using Microsoft Power Apps, Power Automate, Power BI, and Dynamics 365. Skilled in translating complex business requirements into scalable, secure, and user-friendly applications. Proven success in working with international teams and clients to drive digital transformation and process automation.</p>
+</section>
+<section class="section skills" style="animation-delay: 0.4s;">
+<h2 id="skills">Skills</h2>
+<div class="skills-grid">
+<span class="skill-tag">Power Platform (Canvas Apps, Model-Driven Apps, Power Automate, Power BI)</span>
+<span class="skill-tag">Microsoft Dynamics 365 (CRM)</span>
+<span class="skill-tag">Dataverse</span>
+<span class="skill-tag">SharePoint</span>
+<span class="skill-tag">MS Planner</span>
+<span class="skill-tag">Integration with Oracle Financials</span>
+<span class="skill-tag">Project Online</span>
+<span class="skill-tag">Agile</span>
+<span class="skill-tag">DevOps</span>
+<span class="skill-tag">Software Development Lifecycle (SDLC)</span>
+<span class="skill-tag">User Training</span>
+<span class="skill-tag">Documentation</span>
+<span class="skill-tag">Production Support</span>
+</div>
+</section>
+<section class="section experience" style="animation-delay: 0.5s;">
+<h2 id="experience">Experience</h2>
+<div class="timeline">
+<div class="timeline-item left">
+<div class="content">
+<h3>Product Consultant</h3>
+<div class="company">EPM Partners, Australia (Remote)</div>
+<div class="dates">2023 – Present</div>
+<p>Led end-to-end design and development of Power Platform solutions with custom forms, workflows, and integrations. Collaborated with SMEs and stakeholders to translate business needs into technical designs. Ensured adherence to security and scalability standards. Provided technical guidance and resolved complex Power Platform issues. Developed Power BI dashboards and KPI scorecards for performance reporting. Delivered user support, deployed releases, and analyzed production issues.</p>
+</div>
+</div>
+<div class="timeline-item right">
+<div class="content">
+<h3>Junior Product Consultant</h3>
+<div class="company">EPM Partners, Australia (Remote)</div>
+<div class="dates">2022 – 2023</div>
+<p>Built custom Power Apps integrated with various data sources. Developed automated business workflows using Power Automate. Troubleshot and resolved application issues.</p>
+</div>
+</div>
+<div class="timeline-item left">
+<div class="content">
+<h3>Power Platform Developer</h3>
+<div class="company">Power Technology Research, USA (Remote)</div>
+<div class="dates">2021 – 2022</div>
+<p>Created scalable Power Apps and visual dashboards using Power BI. Automated critical workflows, increasing efficiency across departments. Integrated Microsoft services and 3rd-party tools. Delivered user training and maintained system documentation.</p>
+</div>
+</div>
+<div class="timeline-item right">
+<div class="content">
+<h3>Information Technology Specialist</h3>
+<div class="company">MuslimAid UK, Pakistan</div>
+<div class="dates">2017 – 2021</div>
+<p>Digitized manual processes using Canvas Apps. Collaborated on KPI data collection and business intelligence reporting. Designed and developed visual dashboards in Power BI.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section education" style="animation-delay: 0.6s;">
+<h2 id="education">Education</h2>
+<div class="timeline">
+<div class="timeline-item left">
+<div class="content">
+<h3>MS Engineering (DSSP)</h3>
+<div class="company">National University of Science and Technology (NUST), Islamabad</div>
+<div class="dates">2018</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section certifications" style="animation-delay: 0.7s;">
+<h2 id="certifications">Certifications</h2>
+<div class="card-grid">
+<div class="card">
+<h3>PL-900</h3>
+<p>Microsoft Power Platform Fundamentals</p>
+</div>
+<div class="card">
+<h3>PL-200</h3>
+<p>Power Platform Functional Consultant</p>
+</div>
+<div class="card">
+<h3>PL-400</h3>
+<p>Power Platform Developer Associate</p>
+</div>
+</div>
+</section>
+<section class="section training" style="animation-delay: 0.8s;">
+<h2 id="training">Training & MOOCs</h2>
+<div class="card-grid">
+<div class="card">
+<h3>Analyze and Visualize Data with Power BI</h3>
+<p>Microsoft</p>
+</div>
+<div class="card">
+<h3>Building Apps with PowerApps and CDS</h3>
+<p>Shane Young</p>
+</div>
+</div>
+</section>
+<section class="section languages" style="animation-delay: 0.9s;">
+<h2 id="languages">Languages</h2>
+<div class="languages-list">
+<span class="language-item">English (Fluent)</span> &bull; <span class="language-item">Urdu (Native)</span> &bull; <span class="language-item">Punjabi</span> &bull; <span class="language-item">Pushto</span> &bull; <span class="language-item">Saraiki</span> &bull; <span class="language-item">French (Learning)</span>
+</div>
+</section>
+</main>
+</div>
+</body>
+</html>
