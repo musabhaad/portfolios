@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moiz Ahmed | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>:root { --bg-color: #0d0c1d; --card-bg: rgba(26, 28, 51, 0.7); --primary-accent: #00f7ff; --secondary-accent: #8e2de2; --text-color: #cdd5f7; --text-muted: #8892b0; --border-color: rgba(0, 247, 255, 0.2); --glow-color: rgba(0, 247, 255, 0.4); --shadow-color: rgba(142, 45, 226, 0.3);}*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0;}html { scroll-behavior: smooth;}body { font-family: 'Roboto Mono', monospace; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; font-size: 16px; overflow-x: hidden; background-image: linear-gradient(315deg, var(--bg-color) 0%, #1c1a3a 74%); animation: fadeIn 1s ease-in-out;}@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; }}main { max-width: 1000px; margin: 0 auto; padding: 40px 20px;}section { margin-bottom: 70px; opacity: 0; transform: translateY(30px); animation: slideUp 0.6s ease-out forwards;}@keyframes slideUp { to { opacity: 1; transform: translateY(0); }}section:nth-of-type(1) { animation-delay: 0.1s; }section:nth-of-type(2) { animation-delay: 0.2s; }section:nth-of-type(3) { animation-delay: 0.3s; }section:nth-of-type(4) { animation-delay: 0.4s; }section:nth-of-type(5) { animation-delay: 0.5s; }section:nth-of-type(6) { animation-delay: 0.6s; }section:nth-of-type(7) { animation-delay: 0.7s; }section:nth-of-type(8) { animation-delay: 0.8s; }section:nth-of-type(9) { animation-delay: 0.9s; }h1, h2, h3 { font-family: 'Orbitron', sans-serif; color: var(--primary-accent); text-transform: uppercase; letter-spacing: 2px;}h1 { font-size: 3.5rem; text-align: center; margin-bottom: 10px; animation: textFlicker 3s infinite alternate; text-shadow: 0 0 5px var(--glow-color), 0 0 10px var(--glow-color), 0 0 20px var(--secondary-accent), 0 0 40px var(--secondary-accent);}@keyframes textFlicker { 0%, 18%, 22%, 25%, 53%, 57%, 100% { text-shadow: 0 0 4px var(--primary-accent), 0 0 11px var(--primary-accent), 0 0 19px var(--primary-accent), 0 0 40px var(--secondary-accent), 0 0 80px var(--secondary-accent), 0 0 90px var(--secondary-accent), 0 0 100px var(--secondary-accent), 0 0 150px var(--secondary-accent); } 20%, 24%, 55% { text-shadow: none; }}h2 { font-size: 1.8rem; margin-bottom: 30px; padding-bottom: 10px; border-bottom: 1px solid var(--border-color); position: relative;}h2::after { content: ''; position: absolute; left: 0; bottom: -1px; width: 80px; height: 3px; background: linear-gradient(90deg, var(--primary-accent), transparent); animation: h2-underline 5s linear infinite;}@keyframes h2-underline { 0% { width: 0; left: 0; } 50% { width: 100%; left: 0; } 100% { width: 0; left: 100%; }}h3 { font-size: 1.2rem; color: var(--text-color);}a { color: var(--primary-accent); text-decoration: none; transition: all 0.3s ease;}a:hover { text-shadow: 0 0 8px var(--glow-color); filter: brightness(1.2);}p { margin-bottom: 15px; color: var(--text-muted);}.header { text-align: center; margin-bottom: 60px;}.header-title { font-family: 'Roboto Mono', monospace; font-size: 1.2rem; color: var(--text-muted); text-transform: none; letter-spacing: 1px;}.contact-info { display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap; margin-bottom: 50px;}.contact-item { display: flex; align-items: center; gap: 10px; font-size: 0.9rem;}.contact-item svg { width: 20px; height: 20px; fill: var(--primary-accent);}.skills-grid { display: flex; flex-wrap: wrap; gap: 12px;}.skill-tag { background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color); padding: 8px 15px; border-radius: 4px; font-size: 0.9rem; font-family: 'Roboto Mono', monospace; transition: all 0.3s ease; cursor: default;}.skill-tag:hover { transform: translateY(-3px) scale(1.05); background-color: var(--primary-accent); color: var(--bg-color); border-color: var(--primary-accent); box-shadow: 0 0 15px var(--glow-color);}.timeline { position: relative; padding-left: 40px;}.timeline::before { content: ''; position: absolute; left: 10px; top: 5px; bottom: 5px; width: 2px; background: linear-gradient(to bottom, var(--secondary-accent), var(--primary-accent)); border-radius: 2px;}.timeline-item { position: relative; margin-bottom: 40px; background: var(--card-bg); backdrop-filter: blur(5px); border: 1px solid var(--border-color); border-radius: 6px; padding: 25px; transition: all 0.3s ease;}.timeline-item:hover { transform: translateX(10px); box-shadow: 0 0 25px var(--shadow-color); border-color: var(--primary-accent);}.timeline-item::before { content: ''; position: absolute; left: -36px; top: 28px; width: 12px; height: 12px; border-radius: 50%; background-color: var(--bg-color); border: 2px solid var(--primary-accent); z-index: 1; transition: all 0.3s ease;}.timeline-item:hover::before { background-color: var(--primary-accent); transform: scale(1.2);}.item-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;}.item-title { font-weight: 500;}.item-meta { font-size: 0.9rem; color: var(--text-muted); text-align: right; flex-shrink: 0;}.item-description { font-size: 0.95rem; color: var(--text-muted);}.cert-training-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;}.cert-training-item { background: var(--card-bg); border: 1px solid var(--border-color); padding: 20px; border-radius: 6px; transition: all 0.3s ease-in-out;}.cert-training-item:hover { transform: translateY(-5px); box-shadow: 0 0 20px var(--shadow-color); border-color: var(--primary-accent);}.cert-training-item h3 { font-size: 1rem; color: var(--text-color); margin-bottom: 5px;}.cert-training-item p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;}.languages-list { list-style: none; padding-left: 20px;}.languages-list li { position: relative; margin-bottom: 8px; font-size: 1rem; color: var(--text-color);}.languages-list li::before { content: '»'; position: absolute; left: -20px; color: var(--primary-accent); transition: all 0.3s ease;}.languages-list li:hover::before { transform: translateX(5px); }@media (max-width: 768px) { h1 { font-size: 2.5rem; } h2 { font-size: 1.5rem; } .contact-info { flex-direction: column; gap: 15px; } .item-header { flex-direction: column; align-items: flex-start; } .item-meta { text-align: left; } .timeline { padding-left: 25px; } .timeline-item::before { left: -21px; } .timeline-item:hover { transform: none; }}</style>
+</head>
+<body>
+<main>
+<header class="header">
+<section>
+<h1>Moiz Ahmed</h1>
+<p class="header-title">Microsoft Power Platform Consultant</p>
+</section>
+</header>
+<section id="contact">
+<div class="contact-info">
+<a href="mailto:moiz.ahmed@live.com" class="contact-item">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z">
+</path>
+</svg>
+<span>moiz.ahmed@live.com</span>
+</a>
+<a href="tel:+923205778630" class="contact-item">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.02.74-.25 1.02l-2.2 2.2z">
+</path>
+</svg>
+<span>+92 320 5778630</span>
+</a>
+</div>
+</section>
+<section id="about">
+<h2>About Me</h2>
+<p>Microsoft Power Platform Consultant with 7+ years of experience in designing, developing, and delivering end-to-end business solutions using Microsoft Power Apps, Power Automate, Power BI, and Dynamics 365. Skilled in translating complex business requirements into scalable, secure, and user-friendly applications. Proven success in working with international teams and clients to drive digital transformation and process automation.</p>
+</section>
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills-grid">
+<div class="skill-tag">Power Platform (Canvas Apps, Model-Driven Apps, Power Automate, Power BI)</div>
+<div class="skill-tag">Microsoft Dynamics 365 (CRM)</div>
+<div class="skill-tag">Dataverse</div>
+<div class="skill-tag">SharePoint</div>
+<div class="skill-tag">MS Planner</div>
+<div class="skill-tag">Integration with Oracle Financials</div>
+<div class="skill-tag">Project Online</div>
+<div class="skill-tag">Agile</div>
+<div class="skill-tag">DevOps</div>
+<div class="skill-tag">Software Development Lifecycle (SDLC)</div>
+<div class="skill-tag">User Training</div>
+<div class="skill-tag">Documentation</div>
+<div class="skill-tag">Production Support</div>
+</div>
+</section>
+<section id="experience">
+<h2>Experience</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="item-header">
+<h3 class="item-title">Product Consultant @ EPM Partners, Australia (Remote)</h3>
+<span class="item-meta">2023 – Present</span>
+</div>
+<p class="item-description">Led end-to-end design and development of Power Platform solutions with custom forms, workflows, and integrations. Collaborated with SMEs and stakeholders to translate business needs into technical designs. Ensured adherence to security and scalability standards. Provided technical guidance and resolved complex Power Platform issues. Developed Power BI dashboards and KPI scorecards for performance reporting. Delivered user support, deployed releases, and analyzed production issues.</p>
+</div>
+<div class="timeline-item">
+<div class="item-header">
+<h3 class="item-title">Junior Product Consultant @ EPM Partners, Australia (Remote)</h3>
+<span class="item-meta">2022 – 2023</span>
+</div>
+<p class="item-description">Built custom Power Apps integrated with various data sources. Developed automated business workflows using Power Automate. Troubleshot and resolved application issues.</p>
+</div>
+<div class="timeline-item">
+<div class="item-header">
+<h3 class="item-title">Power Platform Developer @ Power Technology Research, USA (Remote)</h3>
+<span class="item-meta">2021 – 2022</span>
+</div>
+<p class="item-description">Created scalable Power Apps and visual dashboards using Power BI. Automated critical workflows, increasing efficiency across departments. Integrated Microsoft services and 3rd-party tools. Delivered user training and maintained system documentation.</p>
+</div>
+<div class="timeline-item">
+<div class="item-header">
+<h3 class="item-title">Information Technology Specialist @ MuslimAid UK, Pakistan</h3>
+<span class="item-meta">2017 – 2021</span>
+</div>
+<p class="item-description">Digitized manual processes using Canvas Apps. Collaborated on KPI data collection and business intelligence reporting. Designed and developed visual dashboards in Power BI.</p>
+</div>
+</div>
+</section>
+<section id="education">
+<h2>Education</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="item-header">
+<h3 class="item-title">MS Engineering (DSSP)</h3>
+<span class="item-meta">2018</span>
+</div>
+<p class="item-description">National University of Science and Technology (NUST), Islamabad</p>
+</div>
+</div>
+</section>
+<section id="certifications">
+<h2>Certifications</h2>
+<div class="cert-training-grid">
+<div class="cert-training-item">
+<h3>PL-900: Microsoft Power Platform Fundamentals</h3>
+</div>
+<div class="cert-training-item">
+<h3>PL-200: Power Platform Functional Consultant</h3>
+</div>
+<div class="cert-training-item">
+<h3>PL-400: Power Platform Developer Associate</h3>
+</div>
+</div>
+</section>
+<section id="training">
+<h2>Training</h2>
+<div class="cert-training-grid">
+<div class="cert-training-item">
+<h3>Analyze and Visualize Data with Power BI</h3>
+<p>Microsoft</p>
+</div>
+<div class="cert-training-item">
+<h3>Building Apps with PowerApps and CDS</h3>
+<p>Shane Young</p>
+</div>
+</div>
+</section>
+<section id="languages">
+<h2>Languages</h2>
+<ul class="languages-list">
+<li>English (Fluent)</li>
+<li>Urdu (Native)</li>
+<li>Punjabi</li>
+<li>Pushto</li>
+<li>Saraiki</li>
+<li>French (Learning)</li>
+</ul>
+</section>
+</main>
+</body>
+</html>
