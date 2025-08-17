@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujan Poudel | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>/* CSS RESET & DEFAULTS */:root { --bg-color: #ffffff; --card-bg-color: #f8f9fa; --text-color: #212529; --secondary-text-color: #5a646e; --accent-color: #4a90e2; --border-color: #dee2e6; --shadow-color: rgba(0, 0, 0, 0.05); }*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }html { scroll-behavior: smooth; }body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }/* LAYOUT */.container { max-width: 900px; margin: 0 auto; padding: 50px 25px; animation: fadeIn 1s ease-in-out; }/* ANIMATIONS */@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }.animate-section { opacity: 0; animation: slideUp 0.7s ease-out forwards; }/* HEADER */.header { text-align: center; margin-bottom: 40px; }h1 { font-size: 2.8rem; font-weight: 700; color: var(--text-color); letter-spacing: -1px; margin-bottom: 8px; } .header .title { font-size: 1.25rem; font-weight: 400; color: var(--secondary-text-color); }/* CONTACT INFO */.contact-info { text-align: center; margin-bottom: 50px; display: flex; justify-content: center; align-items: center; gap: 25px; flex-wrap: wrap; } .contact-info a { color: var(--secondary-text-color); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; transition: color 0.2s ease-in-out; } .contact-info a:hover { color: var(--accent-color); }/* SECTIONS */section { margin-bottom: 50px; }h2 { font-size: 1.8rem; font-weight: 600; color: var(--text-color); border-bottom: 2px solid var(--border-color); padding-bottom: 12px; margin-bottom: 25px; }/* SKILLS */.skills-grid { display: flex; flex-wrap: wrap; gap: 10px; } .skill-tag { background-color: var(--card-bg-color); color: var(--secondary-text-color); padding: 6px 14px; border-radius: 16px; font-size: 0.9rem; font-weight: 500; border: 1px solid var(--border-color); transition: all 0.2s ease-in-out; } .skill-tag:hover { transform: translateY(-3px); box-shadow: 0 4px 12px var(--shadow-color); border-color: var(--accent-color); color: var(--accent-color); }/* EXPERIENCE & EDUCATION (TIMELINE) */.timeline { display: flex; flex-direction: column; gap: 35px; } .timeline-item { background-color: var(--bg-color); padding: 25px; border: 1px solid var(--border-color); border-radius: 8px; transition: all 0.3s ease; position: relative; } .timeline-item:hover { transform: translateY(-5px); box-shadow: 0 8px 20px var(--shadow-color); border-color: #c9d6e4; } .timeline-item-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; flex-wrap: wrap; gap: 10px; }h3 { font-size: 1.2rem; font-weight: 600; color: var(--text-color); } .company-name { font-size: 1.1rem; font-weight: 500; color: var(--secondary-text-color); } .timeline-dates { font-size: 0.9rem; font-weight: 500; color: var(--secondary-text-color); white-space: nowrap; background-color: var(--card-bg-color); padding: 4px 8px; border-radius: 4px; } .timeline-description, p { color: var(--secondary-text-color); font-size: 1rem; }/* ABOUT, LANGUAGES, PUBLICATIONS */.about-text, .languages-text, .publications-list { color: var(--secondary-text-color); font-size: 1.05rem; } .publications-list { list-style: none; padding-left: 0; } .publications-list li { margin-bottom: 15px; padding-left: 25px; position: relative; } .publications-list li::before { content: '📄'; position: absolute; left: 0; top: 0; } .pub-name { font-weight: 600; color: var(--text-color); } .pub-desc { font-size: 0.9rem; }/* RESPONSIVENESS */@media (max-width: 768px) { body { font-size: 15px; } .container { padding: 40px 15px; } h1 { font-size: 2.2rem; } h2 { font-size: 1.6rem; } .timeline-item-header { flex-direction: column; align-items: flex-start; gap: 5px; } }</style>
+</head>
+<body>
+<div class="container">
+<header class="header animate-section">
+<h1 class="name">Sujan Poudel</h1>
+<p class="title">AI Engineer</p>
+</header>
+<div class="contact-info animate-section" style="animation-delay: 0.1s;">
+<a href="mailto:poudelsujan03@gmail.com">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+</svg>
+<span>poudelsujan03@gmail.com</span>
+</a>
+<a href="tel:9866575320">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>
+<span>9866575320</span>
+</a>
+</div>
+<main>
+<section id="skills" class="animate-section" style="animation-delay: 0.2s;">
+<h2>Skills</h2>
+<div class="skills-grid">
+<span class="skill-tag">Python</span>
+<span class="skill-tag">JavaScript</span>
+<span class="skill-tag">C/C++</span>
+<span class="skill-tag">SQL</span>
+<span class="skill-tag">LangChain</span>
+<span class="skill-tag">LangGraph</span>
+<span class="skill-tag">OpenAI</span>
+<span class="skill-tag">Claude</span>
+<span class="skill-tag">Mistral</span>
+<span class="skill-tag">LLaMA</span>
+<span class="skill-tag">PyTorch</span>
+<span class="skill-tag">TensorFlow</span>
+<span class="skill-tag">scikit-learn</span>
+<span class="skill-tag">spaCy</span>
+<span class="skill-tag">NLTK</span>
+<span class="skill-tag">Qdrant</span>
+<span class="skill-tag">FAISS</span>
+<span class="skill-tag">OpenSearch</span>
+<span class="skill-tag">Redis</span>
+<span class="skill-tag">RabbitMQ</span>
+<span class="skill-tag">Docker</span>
+<span class="skill-tag">Kubernetes</span>
+<span class="skill-tag">NGINX</span>
+<span class="skill-tag">CI/CD</span>
+<span class="skill-tag">Linux services</span>
+<span class="skill-tag">FastAPI</span>
+<span class="skill-tag">Django</span>
+<span class="skill-tag">Flask</span>
+<span class="skill-tag">Flutter</span>
+<span class="skill-tag">React</span>
+<span class="skill-tag">PostgreSQL</span>
+<span class="skill-tag">MongoDB</span>
+<span class="skill-tag">SQLite</span>
+<span class="skill-tag">Pandas</span>
+<span class="skill-tag">NumPy</span>
+<span class="skill-tag">Regex</span>
+<span class="skill-tag">Git</span>
+</div>
+</section>
+<section id="experience" class="animate-section" style="animation-delay: 0.3s;">
+<h2>Experience</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-item-header">
+<div>
+<h3>AI & Automation Engineer</h3>
+<div class="company-name">Zeta Labs</div>
+</div>
+<div class="timeline-dates">June 2025 – Present</div>
+</div>
+<p class="timeline-description">Built agentic multilingual RAG system with organizational + role-based access control. Integrated LangChain, Qdrant, Redis caching, RabbitMQ, and Kubernetes microservices. Designed secure caching layers by org/role to reduce LLM cost and latency. Deployed AI services with Docker, scaling LLM pipelines with LangGraph orchestration.</p>
+</div>
+<div class="timeline-item">
+<div class="timeline-item-header">
+<div>
+<h3>AI Developer</h3>
+<div class="company-name">Mentor Friends</div>
+</div>
+<div class="timeline-dates">Jan 2023 – Present</div>
+</div>
+<p class="timeline-description">Built NLP → Schema translator for FreeSchema using LLMs (OpenAI, Mistral). Created HTML validator (Webpack/NPM) and UI component generators from schema. Designed anomaly detector from frontend logs to track user behavior. Built RAG chatbot for FreeSchema documentation retrieval. Managed full AI deployment using Docker, service monitoring, and caching optimizations. Built SQL logic including triggers, transactions, and CRUD routines in PostgreSQL/MySQL. Explored GraphDB (Neo4j) models and Cypher queries for relationship-driven schema traversal.</p>
+</div>
+<div class="timeline-item">
+<div class="timeline-item-header">
+<div>
+<h3>Instructor</h3>
+<div class="company-name">Swastik College</div>
+</div>
+<div class="timeline-dates">Feb 2023 – Present</div>
+</div>
+<p class="timeline-description">Teach core undergraduate subjects: Data Structures & Algorithms, Mobile Programming, Cloud Computing, and AI. Supervise student projects across mobile apps, AI integrations, and web platforms. Support hands-on learning in LLM-based systems, DevOps practices, and production-ready AI tools.</p>
+</div>
+<div class="timeline-item">
+<div class="timeline-item-header">
+<div>
+<h3>Teaching Assistant</h3>
+<div class="company-name">Kathmandu University</div>
+</div>
+<div class="timeline-dates">Aug 2022 – Jan 2023</div>
+</div>
+<p class="timeline-description">Assisted in lab delivery for C++ and Information Systems Technology courses. Supported faculty with practical demos, student evaluation, and academic guidance.</p>
+</div>
+<div class="timeline-item">
+<div class="timeline-item-header">
+<div>
+<h3>Computer Teacher</h3>
+<div class="company-name">Shree Janata Secondary School</div>
+</div>
+<div class="timeline-dates">Apr 2019 – Dec 2020</div>
+</div>
+<p class="timeline-description">Taught secondary-level computer curriculum with practical lab sessions. Designed exercises to build foundational programming and digital literacy.</p>
+</div>
+<div class="timeline-item">
+<div class="timeline-item-header">
+<div>
+<h3>Full-stack Intern + Junior Developer</h3>
+<div class="company-name">Ansu Tech Pvt. Ltd.</div>
+</div>
+<div class="timeline-dates">Apr 2018 – Mar 2019</div>
+</div>
+<p class="timeline-description">Built Django + React-based web applications; contributed to UI prototyping and DB schema design. Participated in client deployments, user workflows, and early full-stack project lifecycle.</p>
+</div>
+<div class="timeline-item">
+<div class="timeline-item-header">
+<div>
+<h3>Technical Assistant</h3>
+<div class="company-name">Ansu Nepal</div>
+</div>
+<div class="timeline-dates">Apr 2015 – Dec 2017</div>
+</div>
+<p class="timeline-description">Maintained digital LED boards, handled network cabling and hardware troubleshooting. Provided field support for basic IT infrastructure installation and repair.</p>
+</div>
+</div>
+</section>
+<section id="education" class="animate-section" style="animation-delay: 0.4s;">
+<h2>Education</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-item-header">
+<h3>MTech in Information Technology</h3>
+<div class="timeline-dates">2021 – 2023</div>
+</div>
+<p class="company-name">Kathmandu University</p>
+</div>
+<div class="timeline-item">
+<div class="timeline-item-header">
+<h3>Bachelor of Computer Applications (BCA)</h3>
+<div class="timeline-dates">2015 – 2019</div>
+</div>
+<p class="company-name">Crimson College, Pokhara University</p>
+</div>
+</div>
+</section>
+<section id="publications" class="animate-section" style="animation-delay: 0.5s;">
+<h2>Publications</h2>
+<ul class="publications-list">
+<li>
+<div class="pub-name">Empirical Software Risk Calculation with Software Risk Factors</div>
+<div class="pub-desc">IEEE SKIMA 2025 (Co-author)</div>
+</li>
+<li>
+<div class="pub-name">Retrieval vs. Generative Chatbot for Nepali Pregnancy Guidance</div>
+<div class="pub-desc">arXiv 2023 (Author) doi.org/10.48550/arXiv.2311.06898</div>
+</li>
+<li>
+<div class="pub-name">Classification of Waste Materials Using CNN</div>
+<div class="pub-desc">FIRE’22 (Author) doi.org/10.1145/3574318.3574345</div>
+</li>
+</ul>
+</section>
+<section id="about" class="animate-section" style="animation-delay: 0.6s;">
+<h2>About me</h2>
+<p class="about-text">AI Engineer with 3+ years of backend and GenAI development experience. Expert in LLM orchestration, agentic RAG systems, and scalable Python microservices. Strong foundation in deploying cost-efficient multilingual AI pipelines, implementing cache strategies, and managing Kubernetes/RabbitMQ environments. Proven track record building schema-driven workflows, AI validators, and NLP interfaces for real-world applications. Quick learner with deep teaching experience across AI, cloud, and full-stack development.</p>
+</section>
+<section id="languages" class="animate-section" style="animation-delay: 0.7s;">
+<h2>Languages</h2>
+<p class="languages-text">Not specified</p>
+</section>
+</main>
+</div>
+</body>
+</html>
