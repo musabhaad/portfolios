@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Muhammad Aamesh Hassan</title>
+<style>@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');:root {--bg-primary: #050816;--bg-secondary: #100d25;--text-primary: #e6e6e6;--text-secondary: #aaa6c3;--accent-primary: #00f6ff;--accent-secondary: #915eff;--card-bg: rgba(21, 16, 48, 0.6);--border-color: rgba(42, 255, 255, 0.2);}* {box-sizing: border-box;margin: 0;padding: 0;}html {scroll-behavior: smooth;}body {background-color: var(--bg-primary);background-image: linear-gradient(315deg, var(--bg-primary) 0%, #0d0c1d 74%);font-family: 'Roboto', sans-serif;color: var(--text-primary);line-height: 1.6;overflow-x: hidden;}@keyframes fadeIn {from {opacity: 0;}to {opacity: 1;}}@keyframes slideInUp {from {opacity: 0;transform: translateY(50px);}to {opacity: 1;transform: translateY(0);}}@keyframes background-pan {0% {background-position: 0% 50%;}50% {background-position: 100% 50%;}100% {background-position: 0% 50%;}}body::before {content: '';position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: linear-gradient(45deg, rgba(145, 94, 255, 0.05), rgba(0, 246, 255, 0.05), rgba(145, 94, 255, 0.05));background-size: 400% 400%;animation: background-pan 15s ease-in-out infinite;z-index: -1;}.container {max-width: 1000px;margin: 0 auto;padding: 2rem 1rem;}section {padding: 4rem 0;animation: slideInUp 0.8s ease-out forwards;opacity: 0;}section:not(:last-child) {border-bottom: 1px solid var(--border-color);}header {text-align: center;padding: 6rem 0 4rem 0;animation: slideInUp 0.8s ease-out forwards;opacity: 0;}header h1 {font-family: 'Orbitron', sans-serif;font-size: 3.5rem;font-weight: 700;color: #fff;letter-spacing: 2px;text-shadow: 0 0 10px var(--accent-primary), 0 0 20px var(--accent-primary), 0 0 30px var(--accent-secondary);margin-bottom: 0.5rem;}header h2 {font-size: 1.5rem;font-weight: 400;color: var(--accent-primary);margin-bottom: 2rem;letter-spacing: 1px;}.section-title {font-family: 'Orbitron', sans-serif;font-size: 2.5rem;text-align: center;margin-bottom: 3rem;color: #fff;position: relative;padding-bottom: 1rem;letter-spacing: 1px;}.section-title::after {content: '';position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);width: 80px;height: 3px;background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary));border-radius: 2px;}.contact-info {display: flex;justify-content: center;align-items: center;gap: 2rem;flex-wrap: wrap;}.contact-info a {color: var(--text-secondary);text-decoration: none;display: flex;align-items: center;gap: 0.5rem;font-size: 1.1rem;transition: color 0.3s ease, text-shadow 0.3s ease;}.contact-info a:hover {color: var(--accent-primary);text-shadow: 0 0 8px var(--accent-primary);}.contact-info svg {width: 24px;height: 24px;fill: currentColor;}.skills-grid {display: grid;grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));gap: 1rem;}.skill-card {background: var(--card-bg);border: 1px solid var(--border-color);border-radius: 8px;padding: 1rem 1.5rem;text-align: center;font-size: 1rem;color: var(--text-primary);transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);}.skill-card:hover {transform: translateY(-5px) scale(1.03);box-shadow: 0 0 20px rgba(0, 246, 255, 0.3);border-color: var(--accent-primary);}.timeline {position: relative;}.timeline::before {content: '';position: absolute;left: 15px;top: 0;bottom: 0;width: 3px;background: linear-gradient(to bottom, var(--accent-secondary), var(--accent-primary));border-radius: 2px;}.timeline-item {position: relative;margin-bottom: 2.5rem;padding-left: 45px;}.timeline-item::before {content: '';position: absolute;left: 0;top: 5px;width: 30px;height: 30px;background-color: var(--bg-secondary);border: 3px solid var(--accent-primary);border-radius: 50%;z-index: 1;transition: transform 0.3s ease;}.timeline-item:hover::before {transform: scale(1.2);box-shadow: 0 0 15px var(--accent-primary);}.timeline-content {background: var(--card-bg);border: 1px solid var(--border-color);border-radius: 8px;padding: 1.5rem;transition: border-color 0.3s ease, box-shadow 0.3s ease;backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);}.timeline-content:hover {border-color: var(--accent-primary);box-shadow: 0 0 25px rgba(0, 246, 255, 0.2);}.timeline-content h3 {color: var(--accent-primary);font-size: 1.3rem;margin-bottom: 0.25rem;}.timeline-content .company-date {color: var(--text-secondary);margin-bottom: 1rem;display: flex;justify-content: space-between;flex-wrap: wrap;font-style: italic;}.timeline-content .company {font-weight: bold;color: #fff;}.timeline-content p {color: var(--text-secondary);}.about-content, .languages-list {max-width: 800px;margin: 0 auto;text-align: center;font-size: 1.1rem;color: var(--text-secondary);}.languages-list ul {list-style: none;padding: 0;display: flex;justify-content: center;gap: 2rem;flex-wrap: wrap;margin-top: 1rem;}.languages-list li {background: var(--card-bg);padding: 0.5rem 1.5rem;border-radius: 20px;border: 1px solid var(--border-color);transition: all 0.3s ease;}.languages-list li:hover {color: var(--accent-primary);border-color: var(--accent-primary);transform: translateY(-3px);}@media (max-width: 768px) {header h1 {font-size: 2.5rem;}header h2 {font-size: 1.2rem;}.section-title {font-size: 2rem;}.timeline::before {left: 8px;}.timeline-item {padding-left: 30px;}.timeline-item::before {left: -7px;width: 25px;height: 25px;}.contact-info {flex-direction: column;gap: 1rem;}}</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1 class="animate-header">Muhammad Aamesh Hassan</h1>
+<h2>Supervisor</h2>
+</header>
+<main>
+<section id="contact">
+<div class="contact-info">
+<a href="mailto:aameshhassan6@gmail.com">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
+</svg>
+<span>aameshhassan6@gmail.com</span>
+</a>
+<a href="tel:+923053314663">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+</svg>
+<span>+92 3053314663</span>
+</a>
+</div>
+</section>
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+<div class="skills-grid">
+<div class="skill-card">NEBOSH IGC</div>
+<div class="skill-card">IOSH</div>
+<div class="skill-card">OSHA</div>
+<div class="skill-card">Fire Safety</div>
+<div class="skill-card">First Aid</div>
+<div class="skill-card">Operations Management</div>
+<div class="skill-card">Staff Management & Discipline</div>
+<div class="skill-card">Process Improvement</div>
+<div class="skill-card">Strategic & Project Planning</div>
+<div class="skill-card">Safety Protocols & Risk Management</div>
+<div class="skill-card">Employee Motivation</div>
+<div class="skill-card">Industrial Hygiene</div>
+<div class="skill-card">Inventory Oversight</div>
+<div class="skill-card">Workflow & Quality Control</div>
+<div class="skill-card">Attention to Detail</div>
+<div class="skill-card">Team Leadership</div>
+<div class="skill-card">Conflict Resolution</div>
+</div>
+</section>
+<section id="experience">
+<h2 class="section-title">Experience</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-content">
+<h3>Supervisor</h3>
+<div class="company-date">
+<span class="company">Mgs Enterprises</span>
+<span>June 2021 – July 2024</span>
+</div>
+<p>Oversaw daily operations to ensure smooth workflow and timely task completion. Applied leadership and problem-solving to improve team performance and workflow organization. Enhanced customer satisfaction by resolving inquiries and concerns promptly. Maintained a productive environment by resolving internal conflicts efficiently. Mentored junior staff, supporting their professional development. Collaborated with departments to align goals and promote cross-functional teamwork. Identified and addressed operational inefficiencies to increase effectiveness. Implemented safety protocols to reduce workplace incidents and ensure compliance.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="education">
+<h2 class="section-title">Education</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-content">
+<h3>DAE Civil Engineering</h3>
+<div class="company-date">
+<span class="company">Government College of Technology, Dera Ismail Khan</span>
+<span>3 Year</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="about-me">
+<h2 class="section-title">About Me</h2>
+<p class="about-content">Dynamic and results-driven Supervisor with a proven record in operations management, team leadership, and staff motivation. Skilled in enhancing customer satisfaction through conflict resolution, process improvements, and safety compliance. Demonstrated ability to streamline workflows, boost productivity, and mentor junior staff for growth. Committed to fostering a collaborative team environment and achieving operational excellence.</p>
+</section>
+<section id="languages">
+<h2 class="section-title">Languages</h2>
+<div class="languages-list">
+<ul>
+<li>English (Fluent)</li>
+<li>Urdu</li>
+<li>Pashto</li>
+<li>Saraiki</li>
+</ul>
+</div>
+</section>
+</main>
+</div>
+</body>
+</html>
