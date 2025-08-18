@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moiz Ahmed | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>/* Reset and Global Styles */:root {--bg-color: #1a1a1a;--card-bg-color: #242424;--primary-gold: #c5b358;--hover-gold: #d4af37;--text-light: #f0f0f0;--text-medium: #cccccc;--border-color: rgba(197, 179, 88, 0.3);--shadow-color: rgba(197, 179, 88, 0.15);}*, *::before, *::after {box-sizing: border-box;margin: 0;padding: 0;}html {scroll-behavior: smooth;}body {font-family: 'Lato', sans-serif;background-color: var(--bg-color);color: var(--text-medium);line-height: 1.7;overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}/* Typography */h1, h2, h3 {font-family: 'Cormorant Garamond', serif;color: var(--text-light);font-weight: 700;line-height: 1.2;}h1 {font-size: clamp(3rem, 10vw, 6rem);background: linear-gradient(45deg, var(--primary-gold), var(--hover-gold));-webkit-background-clip: text;-webkit-text-fill-color: transparent;margin-bottom: 0.25rem;}h2 {font-size: clamp(2rem, 6vw, 2.75rem);margin-bottom: 2.5rem;text-align: center;position: relative;color: var(--primary-gold);}h2::after {content: '';position: absolute;bottom: -10px;left: 50%;transform: translateX(-50%);width: 60px;height: 2px;background-color: var(--border-color);}h3 {font-size: 1.5rem;color: var(--primary-gold);margin-bottom: 0.5rem;}p {margin-bottom: 1rem;}a {color: var(--primary-gold);text-decoration: none;transition: color 0.3s ease;}a:hover {color: var(--hover-gold);}/* Layout */.container {max-width: 1100px;margin: 0 auto;padding: 4rem 2rem;}.section {opacity: 0;transform: translateY(30px);transition: opacity 0.8s ease-out, transform 0.8s ease-out;}.section-visible {opacity: 1;transform: translateY(0);}/* Header Section */.header {min-height: 80vh;display: flex;flex-direction: column;justify-content: center;align-items: center;text-align: center;padding: 2rem;}.header-title {font-family: 'Lato', sans-serif;font-size: clamp(1.2rem, 4vw, 1.75rem);font-weight: 300;color: var(--text-light);letter-spacing: 2px;margin-bottom: 1.5rem;}/* Contact Section */.contact-info {display: flex;justify-content: center;gap: 2.5rem;flex-wrap: wrap;margin-top: -2rem;margin-bottom: 4rem;}.contact-item {display: flex;align-items: center;gap: 0.75rem;font-size: 1.1rem;}.contact-item svg {width: 24px;height: 24px;fill: var(--primary-gold);transition: fill 0.3s ease;}.contact-item a:hover svg {fill: var(--hover-gold);}/* Skills Section */.skills-grid {display: flex;flex-wrap: wrap;gap: 0.75rem;justify-content: center;}.skill-tag {background-color: var(--card-bg-color);color: var(--primary-gold);padding: 0.5rem 1.25rem;border-radius: 20px;font-size: 0.95rem;font-weight: 400;border: 1px solid var(--border-color);transition: all 0.3s ease;}.skill-tag:hover {background-color: var(--primary-gold);color: var(--bg-color);transform: translateY(-3px);box-shadow: 0 4px 15px var(--shadow-color);}/* Experience & Education Timeline */.timeline {position: relative;max-width: 800px;margin: 0 auto;}.timeline::after {content: '';position: absolute;width: 4px;background-color: var(--border-color);top: 0;bottom: 0;left: 50%;margin-left: -2px;}.timeline-item {padding: 1rem 3rem;position: relative;width: 50%;}.timeline-item::after {content: '';position: absolute;width: 20px;height: 20px;right: -10px;background-color: var(--bg-color);border: 4px solid var(--primary-gold);top: 25px;border-radius: 50%;z-index: 1;}.timeline-left {left: 0;}.timeline-right {left: 50%;}.timeline-right::after {left: -10px;}.timeline-content {padding: 1.5rem;background-color: var(--card-bg-color);border-radius: 8px;border: 1px solid var(--border-color);position: relative;transition: all 0.3s ease;}.timeline-content:hover {transform: translateY(-5px);box-shadow: 0 8px 25px var(--shadow-color);border-color: var(--primary-gold);}.timeline-dates {font-style: italic;font-size: 0.9rem;color: var(--text-medium);margin-bottom: 0.5rem;}.timeline-company {font-weight: bold;color: var(--text-light);}.timeline-description {font-size: 0.95rem;margin-top: 1rem;}/* Certifications Section */.grid-container {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 1.5rem;}.grid-card {background-color: var(--card-bg-color);padding: 1.5rem;border-radius: 8px;border: 1px solid var(--border-color);transition: all 0.3s ease;}.grid-card h3 {margin-bottom: 0.25rem;}.grid-card p {font-size: 0.9rem;color: var(--text-medium);margin: 0;}.grid-card:hover {transform: translateY(-5px);box-shadow: 0 8px 25px var(--shadow-color);border-color: var(--primary-gold);}/* About & Languages */.about-content {max-width: 800px;margin: 0 auto;text-align: center;font-size: 1.1rem;}.languages-list {list-style: none;padding: 0;display: flex;flex-wrap: wrap;justify-content: center;gap: 1rem;margin-top: 2rem;}.languages-list li {background: transparent;border: 1px solid var(--border-color);color: var(--primary-gold);padding: 0.5rem 1.25rem;border-radius: 20px;}/* Footer */.footer {text-align: center;padding: 2rem;font-size: 0.9rem;color: var(--text-medium);border-top: 1px solid var(--border-color);margin-top: 2rem;}/* Responsive Design */@media screen and (max-width: 768px) {.timeline::after {left: 20px;}.timeline-item {width: 100%;padding-left: 50px;padding-right: 15px;}.timeline-left::after, .timeline-right::after {left: 10px;}.timeline-right {left: 0%;}h1 {font-size: 3.5rem;}h2 {font-size: 2rem;}}</style>
+</head>
+<body>
+<header class="header section section-visible">
+<h1>Moiz Ahmed</h1>
+<p class="header-title">Product Consultant</p>
+<div class="contact-info">
+<div class="contact-item">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z">
+</path>
+</svg>
+<a href="mailto:moiz.ahmed@live.com">moiz.ahmed@live.com</a>
+</div>
+<div class="contact-item">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z">
+</path>
+</svg>
+<a href="tel:+923205778630">+92 320 5778630</a>
+</div>
+</div>
+</header>
+<main>
+<section id="skills" class="container section">
+<h2>Skills</h2>
+<div class="skills-grid">
+<div class="skill-tag">Power Platform (Canvas Apps, Model-Driven Apps, Power Automate, Power BI)</div>
+<div class="skill-tag">Microsoft Dynamics 365 (CRM)</div>
+<div class="skill-tag">Dataverse</div>
+<div class="skill-tag">SharePoint</div>
+<div class="skill-tag">MS Planner</div>
+<div class="skill-tag">Integration with Oracle Financials</div>
+<div class="skill-tag">Project Online</div>
+<div class="skill-tag">Agile</div>
+<div class="skill-tag">DevOps</div>
+<div class="skill-tag">Software Development Lifecycle (SDLC)</div>
+<div class="skill-tag">User Training</div>
+<div class="skill-tag">Documentation</div>
+<div class="skill-tag">Production Support</div>
+</div>
+</section>
+<section id="experience" class="container section">
+<h2>Experience</h2>
+<div class="timeline">
+<div class="timeline-item timeline-left">
+<div class="timeline-content">
+<h3>Product Consultant</h3>
+<p class="timeline-company">EPM Partners, Australia (Remote)</p>
+<p class="timeline-dates">2023 – Present</p>
+<p class="timeline-description">Led end-to-end design and development of Power Platform solutions with custom forms, workflows, and integrations. Collaborated with SMEs and stakeholders to translate business needs into technical designs. Ensured adherence to security and scalability standards. Provided technical guidance and resolved complex Power Platform issues. Developed Power BI dashboards and KPI scorecards for performance reporting. Delivered user support, deployed releases, and analyzed production issues.</p>
+</div>
+</div>
+<div class="timeline-item timeline-right">
+<div class="timeline-content">
+<h3>Junior Product Consultant</h3>
+<p class="timeline-company">EPM Partners, Australia (Remote)</p>
+<p class="timeline-dates">2022 – 2023</p>
+<p class="timeline-description">Built custom Power Apps integrated with various data sources. Developed automated business workflows using Power Automate. Troubleshot and resolved application issues.</p>
+</div>
+</div>
+<div class="timeline-item timeline-left">
+<div class="timeline-content">
+<h3>Power Platform Developer</h3>
+<p class="timeline-company">Power Technology Research, USA (Remote)</p>
+<p class="timeline-dates">2021 – 2022</p>
+<p class="timeline-description">Created scalable Power Apps and visual dashboards using Power BI. Automated critical workflows, increasing efficiency across departments. Integrated Microsoft services and 3rd-party tools. Delivered user training and maintained system documentation.</p>
+</div>
+</div>
+<div class="timeline-item timeline-right">
+<div class="timeline-content">
+<h3>Information Technology Specialist</h3>
+<p class="timeline-company">MuslimAid UK, Pakistan</p>
+<p class="timeline-dates">2017 – 2021</p>
+<p class="timeline-description">Digitized manual processes using Canvas Apps. Collaborated on KPI data collection and business intelligence reporting. Designed and developed visual dashboards in Power BI.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="education" class="container section">
+<h2>Education</h2>
+<div class="timeline">
+<div class="timeline-item timeline-right" style="width:100%; left:0;">
+<div class="timeline-content">
+<h3>MS Engineering (DSSP)</h3>
+<p class="timeline-company">National University of Science and Technology (NUST), Islamabad</p>
+<p class="timeline-dates">2018</p>
+</div>
+</div>
+</div>
+</section>
+<section id="certifications" class="container section">
+<h2>Certifications & Training</h2>
+<div class="grid-container">
+<div class="grid-card">
+<h3>PL-900: Microsoft Power Platform Fundamentals</h3>
+<p>Not specified</p>
+</div>
+<div class="grid-card">
+<h3>PL-200: Power Platform Functional Consultant</h3>
+<p>Not specified</p>
+</div>
+<div class="grid-card">
+<h3>PL-400: Power Platform Developer Associate</h3>
+<p>Not specified</p>
+</div>
+<div class="grid-card">
+<h3>Analyze and Visualize Data with Power BI</h3>
+<p>Microsoft</p>
+</div>
+<div class="grid-card">
+<h3>Building Apps with PowerApps and CDS</h3>
+<p>Shane Young</p>
+</div>
+</div>
+</section>
+<section id="about" class="container section">
+<h2>About Me</h2>
+<p class="about-content">Microsoft Power Platform Consultant with 7+ years of experience in designing, developing, and delivering end-to-end business solutions using Microsoft Power Apps, Power Automate, Power BI, and Dynamics 365. Skilled in translating complex business requirements into scalable, secure, and user-friendly applications. Proven success in working with international teams and clients to drive digital transformation and process automation.</p>
+</section>
+<section id="languages" class="container section">
+<h2>Languages</h2>
+<ul class="languages-list">
+<li>English (Fluent)</li>
+<li>Urdu (Native)</li>
+<li>Punjabi</li>
+<li>Pushto</li>
+<li>Saraiki</li>
+<li>French (Learning)</li>
+</ul>
+</section>
+</main>
+<footer class="footer">
+<p>&copy; 2024 Moiz Ahmed. All rights reserved.</p>
+</footer>
+<script>document.addEventListener('DOMContentLoaded', () => { const sections = document.querySelectorAll('.section'); const observer = new IntersectionObserver(entries => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('section-visible'); observer.unobserve(entry.target); } }); }, { threshold: 0.1 }); sections.forEach(section => { observer.observe(section); });});</script>
+</body>
+</html>
